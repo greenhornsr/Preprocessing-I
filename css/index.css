@@ -190,7 +190,6 @@ html {
 }
 .skills {
   height: 420px;
-  border: 1px solid red;
   margin: 10px;
 }
 .skills h2 {
@@ -226,4 +225,23 @@ html {
   padding: 5px 20px;
   border-left: 5px solid green;
   background-color: silver;
+}
+.work-history {
+  height: 400px;
+  margin: 10px;
+  border: 1px solid red;
+}
+.work-history table {
+  margin: 10px;
+  border: 1px solid black;
+}
+.work-history table th {
+  font-weight: bold;
+  border: 1px solid black;
+}
+.work-history table td {
+  padding: 0 10px;
+  border-bottom: 1px solid black;
+  vertical-align: middle;
+  font-size: 0.83rem;
 }

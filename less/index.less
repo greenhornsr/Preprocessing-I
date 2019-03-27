@@ -49,8 +49,9 @@ table {
 	border-spacing: 0;
 }
 // Variables
-@Almond: #EED9C4;
+@almond: #EED9C4;
 @gradient: linear-gradient(to top, orange, yellow);
+@primMargin: 10px;
 
 
 // mixer
@@ -126,7 +127,7 @@ html {
 }
 
 .intro{
-	margin: 10px;
+	margin: @primMargin;
 	h2{
 		.h2-style;
 	}
@@ -136,8 +137,8 @@ html {
 // SKILLZ SECTION
 .skills{
 	height: 420px;
-	border: 1px solid red;
-	margin: 10px;
+	// border: 1px solid red;
+	margin: @primMargin;
 	h2{
 		.h2-style;
 	}
@@ -176,6 +177,28 @@ html {
 		border-left: 5px solid green;
 		background-color: silver;
 	}
+}
+
+// WORK HISTORY
+.work-history{
+	height: 400px;
+	margin: @primMargin;
+	border: 1px solid red;
+	table{
+		margin: 10px;
+		border: 1px solid black;
+		th{
+			font-weight: bold;
+			border: 1px solid black;
+		}
+		td{
+			padding: 0 10px;
+			border-bottom: 1px solid black;
+			vertical-align: middle;
+			font-size: .83rem;
+		}
+	}
+
 }
 
 
