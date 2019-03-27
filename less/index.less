@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	// background-color: red;
 }
 ol, ul {
 	list-style: none;
@@ -47,6 +48,18 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+// Variables
+@Almond: #EED9C4;
+@gradient: linear-gradient(to top, orange, yellow);
+
+
+// mixer
+.h2-style(){
+	font-size: 1.3rem;
+	font-weight: bold;
+
+}
+
 
 /* Set every element's box-sizing to border-box */
 * {
@@ -56,4 +69,90 @@ table {
 html, body {
     height: 100%;
 }
+
+// My HTML Scale
+html {
+	font-size: 62.5%rem;
+}
+.container{
+	width: 500px;
+
+}
+
+// Background header Image
+.top-page{
+	header{
+		width: 100%;
+		height: 300px;
+		background-image: url(images/beautiful-road-path-bkgprim.jpg);
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		h1, h2{
+			font-size: 2.5rem;
+			color: white;
+		}
+		h2{
+			text-align: center;
+		}
+	}
+}
+
+.nav-header{
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid red;
+	background-image: @gradient;
+	.nav-img{
+		width: 15%
+	}
+	img{
+		width: 80%;
+		height: 80%;
+	}
+	.nav-bar{
+		width: 85%;
+		font-size: 1.5rem;
+	}
+	nav{
+		display: flex;
+		justify-content: space-between;
+	}
+	
+}
+
+.intro{
+	margin: 10px;
+	h2{
+		.h2-style;
+	}
+}
+
+.skills{
+	height: 400px;
+	border: 1px solid red;
+	margin: 10px;
+	h2{
+		.h2-style;
+	}
+	.main-ul{
+		width: 200px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		list-style: upper-roman inside;
+	}
+	.pro-hist{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-content: flex-start;
+	}
+
+}
+
 
