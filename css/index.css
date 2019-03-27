@@ -189,7 +189,7 @@ html {
   font-weight: bold;
 }
 .skills {
-  height: 400px;
+  height: 420px;
   border: 1px solid red;
   margin: 10px;
 }
@@ -198,15 +198,32 @@ html {
   font-weight: bold;
 }
 .skills .main-ul {
-  width: 200px;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-content: flex-start;
   list-style: upper-roman inside;
 }
-.skills .pro-hist {
+.skills .pro-history {
+  margin: 0 30px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-content: flex-start;
+}
+.skills .skill-detail {
+  margin: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-start;
+  padding: 5px 20px;
+  border-left: 5px solid red;
+  background-color: silver;
+}
+.skills .skill-p {
+  margin: 0 40px;
+  padding: 5px 20px;
+  border-left: 5px solid green;
+  background-color: silver;
 }
