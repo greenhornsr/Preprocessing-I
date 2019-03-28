@@ -66,6 +66,16 @@ table {
 	flex-wrap: wrap;
 }
 
+// -------------DESKTOP MIXER---------
+.h2-desktop-style(){
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: @primMargin;
+}
+
+@media(min-width: 1100px){
+	font-size: 5rem;
+}
 
 
 /* Set every element's box-sizing to border-box */
@@ -89,6 +99,10 @@ html {
 		width: 100%;
 		min-width: 800px;
 	}
+	@media(min-width: 1100px){
+		width: 100%;
+		min-width: 1100px;
+	}
 }
 
 // Background header Image
@@ -104,6 +118,9 @@ html {
 		h1, h2{
 			font-size: 2.5rem;
 			color: white;
+			@media(min-width: 1100px){
+				font-size: 5rem;
+			}
 		}
 		h2{
 			text-align: center;
@@ -129,6 +146,9 @@ html {
 	.nav-bar{
 		width: 85%;
 		font-size: 1.4rem;
+		@media(min-width: 1100px){
+			font-size: 3rem;
+		}
 	}
 	nav{
 		display: flex;
@@ -141,6 +161,9 @@ html {
 	@media(min-width: 800px){
 		height: 80px;
 	}
+	@media(min-width: 1100px){
+		height: 115px;
+	}
 	
 }
 
@@ -149,6 +172,14 @@ html {
 	margin-bottom: @margbot;
 	h2{
 		.h2-style;
+		@media(min-width: 1100px){
+			.h2-desktop-style
+		}
+	}
+	p{
+		@media(min-width: 1100px){
+			font-size: 1.3rem;
+		}
 	}
 }
 
@@ -161,6 +192,9 @@ html {
 	margin-bottom: @margbot;
 	h2{
 		.h2-style;
+		@media(min-width: 1100px){
+			.h2-desktop-style
+		}
 	}
 	.main-ul{
 		margin-left: 20px;
@@ -170,6 +204,9 @@ html {
 		align-content: flex-start;
 		list-style: upper-roman inside;
 		// border: 1px solid green;
+		@media(min-width: 1100px){
+			font-size: 1.3rem;
+		}
 	}
 	.pro-history{
 		margin: 0 30px;
@@ -199,6 +236,12 @@ html {
 		@media(min-width: 800px){
 			width: 85%;	
 		}
+		@media(min-width: 1100px){
+			width: 87%;
+		}
+	}
+	@media(min-width: 1100px){
+		height: 500px;
 	}
 }
 
@@ -209,6 +252,9 @@ html {
 	// border: 1px solid red;
 	h2{
 		.h2-style;
+		@media(min-width: 1100px){
+			.h2-desktop-style
+		}
 	}
 	table{
 		margin: @primMargin;
@@ -246,10 +292,18 @@ html {
 					font-weight: bold;	
 				}
 			}
+			@media(min-width: 1100px){
+				font-size: 1rem;
+			}
 		}
 	}
 	@media(min-width: 800px){
 		max-width: 800px;
+		width: 100%;
+		// background-color: pink;	
+	}
+	@media(min-width: 1100px){
+		max-width: 1100px;
 		width: 100%;
 		// background-color: pink;	
 	}
@@ -261,9 +315,15 @@ html {
 	// border: 1px solid red;
 	h2{
 		.h2-style;
+		@media(min-width: 1100px){
+			.h2-desktop-style
+		}
 	}
 	address{
 		margin-left: 60px;
+		@media(min-width: 1100px){
+			font-size: 1.5rem;
+		}
 	}
 }
 
