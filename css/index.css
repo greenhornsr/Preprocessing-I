@@ -138,7 +138,8 @@ html {
   font-size: 62.5% rem;
 }
 .container {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   margin: 0 auto;
 }
 .top-page header {
@@ -176,14 +177,15 @@ html {
 }
 .nav-header .nav-bar {
   width: 85%;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 .nav-header nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .intro {
   margin: 10px;
+  margin-bottom: 70px;
 }
 .intro h2 {
   font-size: 1.3rem;
@@ -191,8 +193,9 @@ html {
   margin-bottom: 10px;
 }
 .skills {
-  height: 420px;
+  height: 440px;
   margin: 10px;
+  margin-bottom: 70px;
 }
 .skills h2 {
   font-size: 1.3rem;
@@ -233,6 +236,7 @@ html {
 }
 .work-history {
   margin: 10px;
+  margin-bottom: 70px;
 }
 .work-history h2 {
   font-size: 1.3rem;
@@ -248,13 +252,14 @@ html {
   border: 1px solid black;
 }
 .work-history table td {
-  padding: 0 10px;
   border-bottom: 1px solid black;
   vertical-align: middle;
-  font-size: 0.83rem;
+  text-align: center;
+  font-size: 0.7rem;
 }
 .contact-me {
   margin: 10px;
+  margin-bottom: 70px;
 }
 .contact-me h2 {
   font-size: 1.3rem;
@@ -266,4 +271,5 @@ html {
 }
 footer {
   text-align: center;
+  margin: 10px;
 }

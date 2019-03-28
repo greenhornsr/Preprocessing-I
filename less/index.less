@@ -52,6 +52,7 @@ table {
 @almond: #EED9C4;
 @gradient: linear-gradient(to top, orange, yellow);
 @primMargin: 10px;
+@margbot: 70px;
 
 
 // -------------Mixer----------------
@@ -81,7 +82,8 @@ html {
 	font-size: 62.5%rem;
 }
 .container{
-	width: 500px;
+	width: 100%;
+	max-width: 500px;
 	margin: 0 auto;
 }
 
@@ -106,6 +108,7 @@ html {
 }
 
 .nav-header{
+	// margin-bottom: @margbot;
 	height: 50px;
 	display: flex;
 	justify-content: center;
@@ -121,17 +124,18 @@ html {
 	}
 	.nav-bar{
 		width: 85%;
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 	}
 	nav{
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 	
 }
 
 .intro{
 	margin: @primMargin;
+	margin-bottom: @margbot;
 	h2{
 		.h2-style;
 	}
@@ -140,9 +144,10 @@ html {
 
 // SKILLZ SECTION
 .skills{
-	height: 420px;
+	height: 440px;
 	// border: 1px solid red;
 	margin: @primMargin;
+	margin-bottom: @margbot;
 	h2{
 		.h2-style;
 	}
@@ -186,28 +191,30 @@ html {
 // WORK HISTORY
 .work-history{
 	margin: @primMargin;
+	margin-bottom: @margbot;
 	// border: 1px solid red;
 	h2{
 		.h2-style;
 	}
 	table{
-		margin: 10px;
+		margin: @primMargin;
 		border: 1px solid black;
 		th{
 			font-weight: bold;
 			border: 1px solid black;
 		}
 		td{
-			padding: 0 10px;
 			border-bottom: 1px solid black;
 			vertical-align: middle;
-			font-size: .83rem;
+			text-align: center;
+			font-size: .7rem;
 		}
 	}
 }
 
 .contact-me{
 	margin: @primMargin;
+	margin-bottom: @margbot;
 	// border: 1px solid red;
 	h2{
 		.h2-style;
@@ -219,5 +226,6 @@ html {
 
 footer{
 	text-align: center;
+	margin: @primMargin;
 }
 
