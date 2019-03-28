@@ -85,6 +85,9 @@ html {
 	width: 100%;
 	max-width: 500px;
 	margin: 0 auto;
+	@media(min-width: 800px){
+		min-width: 800px;
+	}
 }
 
 // Background header Image
@@ -129,6 +132,10 @@ html {
 	nav{
 		display: flex;
 		justify-content: space-around;
+		a:hover{
+			font-weight: bolder;
+			color: red;
+		}
 	}
 	
 }
@@ -199,15 +206,28 @@ html {
 	table{
 		margin: @primMargin;
 		border: 1px solid black;
+		tr{
+			height: 3em;
+			&:hover:nth-child(1n+2){
+				background-image: @gradient; 
+			}
+		}
 		th{
 			font-weight: bold;
 			border: 1px solid black;
+			vertical-align: middle;
+			text-align: center;
 		}
 		td{
+			// padding: 10px;
 			border-bottom: 1px solid black;
 			vertical-align: middle;
 			text-align: center;
 			font-size: .7rem;
+			&:hover:nth-child(-n+5){
+				font-size: 1.0rem;
+				font-weight: bold;
+			}
 		}
 	}
 }

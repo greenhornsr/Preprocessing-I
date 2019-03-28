@@ -142,6 +142,11 @@ html {
   max-width: 500px;
   margin: 0 auto;
 }
+@media (min-width: 800px) {
+  .container {
+    min-width: 800px;
+  }
+}
 .top-page header {
   width: 100%;
   height: 300px;
@@ -182,6 +187,10 @@ html {
 .nav-header nav {
   display: flex;
   justify-content: space-around;
+}
+.nav-header nav a:hover {
+  font-weight: bolder;
+  color: red;
 }
 .intro {
   margin: 10px;
@@ -247,15 +256,27 @@ html {
   margin: 10px;
   border: 1px solid black;
 }
+.work-history table tr {
+  height: 3em;
+}
+.work-history table tr:hover:nth-child(1n+2) {
+  background-image: linear-gradient(to top, orange, yellow);
+}
 .work-history table th {
   font-weight: bold;
   border: 1px solid black;
+  vertical-align: middle;
+  text-align: center;
 }
 .work-history table td {
   border-bottom: 1px solid black;
   vertical-align: middle;
   text-align: center;
   font-size: 0.7rem;
+}
+.work-history table td:hover:nth-child(-n+5) {
+  font-size: 1rem;
+  font-weight: bold;
 }
 .contact-me {
   margin: 10px;
