@@ -86,6 +86,7 @@ html {
 	max-width: 500px;
 	margin: 0 auto;
 	@media(min-width: 800px){
+		width: 100%;
 		min-width: 800px;
 	}
 }
@@ -136,6 +137,9 @@ html {
 			font-weight: bolder;
 			color: red;
 		}
+	}
+	@media(min-width: 800px){
+		height: 80px;
 	}
 	
 }
@@ -192,6 +196,9 @@ html {
 		// list-style: square inside url("css/images/sports-shoe-icon.png");
 		border-left: 5px solid green;
 		background-color: silver;
+		@media(min-width: 800px){
+			width: 85%;	
+		}
 	}
 }
 
@@ -206,6 +213,11 @@ html {
 	table{
 		margin: @primMargin;
 		border: 1px solid black;
+		@media(min-width: 800px){
+			table-layout: fixed;
+			width: 97%;
+			// background-color: pink;	
+		}
 		tr{
 			height: 3em;
 			&:hover:nth-child(1n+2){
@@ -228,7 +240,18 @@ html {
 				font-size: 1.0rem;
 				font-weight: bold;
 			}
+			&:hover:last-child{
+				@media(min-width: 800px){
+					font-size: 1.0rem;
+					font-weight: bold;	
+				}
+			}
 		}
+	}
+	@media(min-width: 800px){
+		max-width: 800px;
+		width: 100%;
+		// background-color: pink;	
 	}
 }
 

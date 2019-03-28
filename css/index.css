@@ -144,6 +144,7 @@ html {
 }
 @media (min-width: 800px) {
   .container {
+    width: 100%;
     min-width: 800px;
   }
 }
@@ -191,6 +192,11 @@ html {
 .nav-header nav a:hover {
   font-weight: bolder;
   color: red;
+}
+@media (min-width: 800px) {
+  .nav-header {
+    height: 80px;
+  }
 }
 .intro {
   margin: 10px;
@@ -243,6 +249,11 @@ html {
   border-left: 5px solid green;
   background-color: silver;
 }
+@media (min-width: 800px) {
+  .skills .skill-p {
+    width: 85%;
+  }
+}
 .work-history {
   margin: 10px;
   margin-bottom: 70px;
@@ -255,6 +266,12 @@ html {
 .work-history table {
   margin: 10px;
   border: 1px solid black;
+}
+@media (min-width: 800px) {
+  .work-history table {
+    table-layout: fixed;
+    width: 97%;
+  }
 }
 .work-history table tr {
   height: 3em;
@@ -277,6 +294,18 @@ html {
 .work-history table td:hover:nth-child(-n+5) {
   font-size: 1rem;
   font-weight: bold;
+}
+@media (min-width: 800px) {
+  .work-history table td:hover:last-child {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+@media (min-width: 800px) {
+  .work-history {
+    max-width: 800px;
+    width: 100%;
+  }
 }
 .contact-me {
   margin: 10px;
