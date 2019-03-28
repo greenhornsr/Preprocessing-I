@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	// background-color: red;
 }
 ol, ul {
 	list-style: none;
@@ -47,6 +48,35 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+// ------------Variables-------------
+@almond: #EED9C4;
+@gradient: linear-gradient(to top, orange, yellow);
+@primMargin: 10px;
+@margbot: 70px;
+
+
+// -------------Mixer----------------
+.h2-style(){
+	font-size: 1.3rem;
+	font-weight: bold;
+	margin-bottom: @primMargin;
+}
+.switch2flex-wrap(){
+	display:flex;
+	flex-wrap: wrap;
+}
+
+// -------------DESKTOP MIXER---------
+.h2-desktop-style(){
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: @primMargin;
+}
+
+@media(min-width: 1100px){
+	font-size: 5rem;
+}
+
 
 /* Set every element's box-sizing to border-box */
 * {
@@ -55,5 +85,250 @@ table {
 
 html, body {
     height: 100%;
+}
+
+// My HTML Scale
+html {
+	font-size: 62.5%rem;
+}
+.container{
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+	@media(min-width: 800px){
+		width: 100%;
+		min-width: 800px;
+	}
+	@media(min-width: 1100px){
+		width: 100%;
+		min-width: 1100px;
+	}
+}
+
+// Background header Image
+.top-page{
+	header{
+		width: 100%;
+		height: 300px;
+		background-image: url(images/beautiful-road-path-bkgprim.jpg);
+		.switch2flex-wrap;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		h1, h2{
+			font-size: 2.5rem;
+			color: white;
+			@media(min-width: 1100px){
+				font-size: 5rem;
+			}
+		}
+		h2{
+			text-align: center;
+		}
+	}
+}
+
+.nav-header{
+	// margin-bottom: @margbot;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid red;
+	background-image: @gradient;
+	.nav-img{
+		width: 15%
+	}
+	img{
+		width: 80%;
+		height: 80%;
+	}
+	.nav-bar{
+		width: 85%;
+		font-size: 1.4rem;
+		@media(min-width: 1100px){
+			font-size: 3rem;
+		}
+	}
+	nav{
+		display: flex;
+		justify-content: space-around;
+		a:hover{
+			font-weight: bolder;
+			color: red;
+		}
+	}
+	@media(min-width: 800px){
+		height: 80px;
+	}
+	@media(min-width: 1100px){
+		height: 115px;
+	}
+	
+}
+
+.intro{
+	margin: @primMargin;
+	margin-bottom: @margbot;
+	h2{
+		.h2-style;
+		@media(min-width: 1100px){
+			.h2-desktop-style
+		}
+	}
+	p{
+		@media(min-width: 1100px){
+			font-size: 1.3rem;
+		}
+	}
+}
+
+
+// SKILLZ SECTION
+.skills{
+	height: 440px;
+	// border: 1px solid red;
+	margin: @primMargin;
+	margin-bottom: @margbot;
+	h2{
+		.h2-style;
+		@media(min-width: 1100px){
+			.h2-desktop-style
+		}
+	}
+	.main-ul{
+		margin-left: 20px;
+		// width: 200px;
+		display: flex;
+		flex-direction: column;
+		align-content: flex-start;
+		list-style: upper-roman inside;
+		// border: 1px solid green;
+		@media(min-width: 1100px){
+			font-size: 1.3rem;
+		}
+	}
+	.pro-history{
+		margin: 0 30px;
+		.switch2flex-wrap;
+		flex-direction: column;
+		align-content: flex-start;
+		// list-style: disc inside;
+	}
+	.skill-detail{
+		width: 92%;
+		margin: 0 20px;
+		.switch2flex-wrap;
+		flex-direction: column;
+		align-content: flex-start;
+		// BORDER STYLING
+		padding: 5px 20px;
+		border-left: 5px solid red;
+		background-color: silver;
+	}
+	.skill-p{
+		width: 80%;
+		margin: 0 50px;
+		padding: 5px 20px;
+		// list-style: square inside url("css/images/sports-shoe-icon.png");
+		border-left: 5px solid green;
+		background-color: silver;
+		@media(min-width: 800px){
+			width: 85%;	
+		}
+		@media(min-width: 1100px){
+			width: 87%;
+		}
+	}
+	@media(min-width: 1100px){
+		height: 500px;
+	}
+}
+
+// WORK HISTORY
+.work-history{
+	margin: @primMargin;
+	margin-bottom: @margbot;
+	// border: 1px solid red;
+	h2{
+		.h2-style;
+		@media(min-width: 1100px){
+			.h2-desktop-style
+		}
+	}
+	table{
+		margin: @primMargin;
+		border: 1px solid black;
+		@media(min-width: 800px){
+			table-layout: fixed;
+			width: 97%;
+			// background-color: pink;	
+		}
+		tr{
+			height: 3em;
+			&:hover:nth-child(1n+2){
+				background-image: @gradient; 
+			}
+		}
+		th{
+			font-weight: bold;
+			border: 1px solid black;
+			vertical-align: middle;
+			text-align: center;
+		}
+		td{
+			// padding: 10px;
+			border-bottom: 1px solid black;
+			vertical-align: middle;
+			text-align: center;
+			font-size: .7rem;
+			&:hover:nth-child(-n+5){
+				font-size: 1.0rem;
+				font-weight: bold;
+			}
+			&:hover:last-child{
+				@media(min-width: 800px){
+					font-size: 1.0rem;
+					font-weight: bold;	
+				}
+			}
+			@media(min-width: 1100px){
+				font-size: 1rem;
+			}
+		}
+	}
+	@media(min-width: 800px){
+		max-width: 800px;
+		width: 100%;
+		// background-color: pink;	
+	}
+	@media(min-width: 1100px){
+		max-width: 1100px;
+		width: 100%;
+		// background-color: pink;	
+	}
+}
+
+.contact-me{
+	margin: @primMargin;
+	margin-bottom: @margbot;
+	// border: 1px solid red;
+	h2{
+		.h2-style;
+		@media(min-width: 1100px){
+			.h2-desktop-style
+		}
+	}
+	address{
+		margin-left: 60px;
+		@media(min-width: 1100px){
+			font-size: 1.5rem;
+		}
+	}
+}
+
+footer{
+	text-align: center;
+	margin: @primMargin;
 }
 
